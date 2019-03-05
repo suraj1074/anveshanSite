@@ -8012,9 +8012,8 @@ h1, h2, h3, h4, h5,
   color: #f34949 !important; }
 
 .ftco-navbar-light {
-  background: transparent !important;
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 3;
