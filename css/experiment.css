@@ -14,8 +14,8 @@
 }
 
 .linked-list__pic-box {
- min-width:276px;
- max-width:276px;
+ min-width:600px;
+ max-width:600px;
  -webkit-align-self:stretch;
  -ms-flex-item-align:stretch;
  align-self:stretch;
@@ -77,7 +77,7 @@
 }
 
 .features-container-r {
-  padding-left:20%
+  padding-left:5%
  }
 
  @media (max-width:767px) {
