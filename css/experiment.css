@@ -9,7 +9,7 @@
  display:-webkit-flex;
  display:-ms-flexbox;
  display:flex;
- padding-top:116px;
+ padding-top:4%;
  overflow:visible
 }
 
@@ -40,8 +40,8 @@
 
 .linked-list__pic {
  max-width:100%;
- width: 400px;
- height: 220px;
+ width: 500px;
+ height: 300px;
 }
 
 @media (min-width:768px) {
@@ -130,6 +130,8 @@
 
 .features-title{
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .features-text{
@@ -142,13 +144,13 @@
     top: 0;
     bottom: 0;
     width: 1px;
-    background: #ccc;
+    background: black;
     z-index: 1;
-    height: 375px;
+    height: 150%;
 }
 
 .line:last-child{
-  height: 300px;
+  height: 40%;
 }
 
 .wordwrapper {
