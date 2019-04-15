@@ -441,8 +441,6 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   padding-bottom: 15px;
   margin-right: auto;
   margin-left: auto; 
@@ -8506,7 +8504,7 @@ h1, h2, h3, h4, h5,
           background: #fff; }
 
 .container {
-  max-width: 1200px; }
+  max-width: 100%; }
 
 .bg-light {
   background: #fafafa !important; }
@@ -8879,7 +8877,10 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   background: #141313;
-  padding: 6em 0; }
+  padding: 6em 0; 
+  padding-left: 10%;
+  padding-right: 10%;
+}
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
