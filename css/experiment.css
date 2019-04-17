@@ -13,6 +13,10 @@
  overflow:visible
 }
 
+.linked-list__item:last-child{
+  margin-bottom: 5%;
+}
+
 .linked-list__pic-box {
  /*min-width:600px;*/
  max-width:600px;
@@ -110,6 +114,13 @@
 .process_box_img{
   width: 60%;
   height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process_box p, .process_box h4{
+  text-align: center;
 }
 
 .twist_box_1{
@@ -119,7 +130,7 @@
 
 .twist_box_2{
   background-image:url(../images/Image_processing.png); 
-  background-size: 99% 100%;
+  background-size: 99.2% 100%;
   background-repeat: no-repeat;
 }
 
@@ -165,13 +176,13 @@
 }
 
 .word {
-    color: #ccc;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 3px;
     font: bold 12px arial,sans-serif;
     background: #fff;
-    border: 2px solid blue;
+    border: 2px solid black;
     border-radius: 20px;
 }
 
@@ -273,7 +284,7 @@
 
 .navbar-nav .active a::after {
   border-bottom: 2px solid #5bc0eb;
-  bottom: 10px;
+  bottom: 10%;
   content: " ";
   left: 0;
   position: absolute;
@@ -282,4 +293,16 @@
 
 .list-inline{
   padding-left: 5%;
+}
+
+.text_box{
+  margin-top: 2%; 
+  padding-left: 20px;
+}
+
+.learn_more{
+  border: 5px solid gray; 
+  display: inline-block; 
+  color: white; 
+  padding: 5px;
 }
