@@ -309,6 +309,6 @@
 .top-buffer { 
   margin-top:20px;
 }
-.product_text_box:first-child{
-  padding-top: 10%;
+body{
+  overflow-x: hidden;
 }
