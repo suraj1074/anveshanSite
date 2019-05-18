@@ -175,3 +175,8 @@
 body{
     overflow-x: hidden;
 }
+
+.process_icon_img{
+    width: 100px;
+    height: 100px;
+}

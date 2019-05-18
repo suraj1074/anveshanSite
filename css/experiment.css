@@ -110,7 +110,22 @@
   padding-left:16px
  }
 }
-
+/*.process_box:first-child{
+  border: 2px solid;
+}
+.process_box{
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}*/
+.process_box{
+  padding: 2px;
+}
+.process_box:hover{
+  background-color: #2b4368;
+  opacity: 0.5;
+  border: 2px solid white;
+}
 .process_box_img{
   width: 50%;
   height: 50%;
@@ -310,8 +325,15 @@
   margin-top:20px;
 }
 body{
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 #ftco-navbar{
   box-shadow: 1px 1px #888888;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    visibility: hidden;
+    display: none;
+  }
 }

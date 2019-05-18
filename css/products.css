@@ -32,7 +32,7 @@
     z-index: 0;
     /*background-image: url(../images/our_process_background.png);*/
     /*background-size: cover;*/
-    background-color: black;
+    background-color: #212147;
 }
 /*.process-model li::after {
     background: #e5e5e5 none repeat scroll 0 0;
@@ -59,9 +59,10 @@
     width: 100%;
     text-align: center;
     float: none;
-    /*padding: 20px;*/
+    /*padding-left: 20px;*/
     /*margin: 1%;*/
-    border: 2px solid blue;
+    /*border-right: 2px solid #8585ab;*/
+    border-bottom: 2px solid #8585ab;
 }
 .nav-tabs.process-model > li.active > a, .nav-tabs.process-model > li.active > a:hover, .nav-tabs.process-model > li.active > a:focus, .process-model li a:hover, .process-model li a:focus {
     border: none;
@@ -76,7 +77,7 @@
 .process-model li.active,
 .process-model li.visited {
     color: #57b87b;
-    background-color: blue;
+    background-color: #212147;
 }
 .process-model li.active a,
 .process-model li.active a:hover,
@@ -109,6 +110,9 @@
 .process-model li p {
     font-size: 14px;
     margin-top: 11px;
+}
+.process-model li h2{
+    color: green;
 }
 .process-model.contact-us-tab li.visited a, .process-model.contact-us-tab li.visited p {
     color: #606060!important;
@@ -178,4 +182,23 @@ table tr:nth-child(odd){
 }
 table{
     margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .bottom-div-indicator {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.buy_box{
+    position: fixed;
+    margin-left: 52%;
+}
+
+@media screen and (max-width: 600px) {
+  .buy_box{
+    position: relative;
+    margin-left: 10%;
+  }
 }
