@@ -152,6 +152,7 @@ table{
 .buy_box{
     position: fixed;
     margin-left: 52%;
+    top: 20%;
 }
 
 @media screen and (max-width: 600px) {
