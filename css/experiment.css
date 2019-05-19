@@ -121,7 +121,7 @@
 .process_box{
   padding: 2px;
 }
-.process_box:hover{
+.process_box:hover, .process_box:active{
   background-color: #2b4368;
   opacity: 0.5;
   border: 2px solid white;
@@ -331,9 +331,35 @@ body{
   box-shadow: 1px 1px #888888;
 }
 
-@media screen and (max-width: 600px) {
+.twist_box_3, .twist_box_2{
+  height: 250px;
+}
+.twist_box_1{
+  height: 160px;
+}
+
+.text_box .heading{
+  font-size: 35px;
+  color: white;  
+}
+
+.text_box .sub-text{
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
   .wrapper {
     visibility: hidden;
     display: none;
   }
+  .twist_box_3, .twist_box_2, .twist_box_1{
+    height: 200px;
+    width: 100%;
+    margin: 3px;
+  }
+}
+
+.our_process_link{
+  display: inline-block; 
+  color: white
 }
