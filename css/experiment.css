@@ -363,3 +363,8 @@ body{
   display: inline-block; 
   color: white
 }
+
+#carousel-box{
+  /*z-index: 300;*/
+  /*margin-top: 100px;*/
+}
