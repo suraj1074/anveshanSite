@@ -154,8 +154,14 @@ table{
 .buy_box{
     position: fixed;
     margin-left: 52%;
-    top: 20%;
-    z-index: 200;
+    top: 17.5%;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.salient-fact-box .row{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -167,8 +173,9 @@ table{
 
 .product_icon{
     width: 10%;
-    position: fixed; 
-    top: 20%; 
+    position: absolute;
+    height: 100%;
+    background-color: #141313;
     left: 0%; 
     z-index: 200;
 }
@@ -202,4 +209,12 @@ table{
     .product_icon{
         width: 20%;
     }
+}
+
+.sub-heading{
+    font-size: 2.5vw;
+}
+
+.product-description{
+    padding-top: 25px;
 }
