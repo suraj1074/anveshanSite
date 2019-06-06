@@ -111,16 +111,16 @@ html,body
 .description-text{
     position: absolute; 
     /*top: 150px; */
-    left: 5%; 
-    padding: 20px; 
+    /*left: 5%; */
+    margin: 20px; 
     text-align: center;
+    background-color: white;
 }
 .description-text h2{
-    font-size: 30px; 
-    color: white; 
+    font-size: 2vw; 
+    color: black; 
     width: 80vw;
 }
-
 .header_text{
     margin-left: 5%; 
     margin-right: 5%; 
@@ -129,7 +129,16 @@ html,body
     margin-bottom: 40px; 
     margin-top: 20px; 
 }
-
+.process-header{
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 40px; 
+    font-weight: bold; 
+    color: white;
+}
+#process-tab{
+    padding: 0px;
+}
 @media screen and (max-width: 560px) {
   .more-icon-preocess.process-model li span {
         font-size: 23px;
@@ -168,6 +177,13 @@ html,body
         left: 0;
     }
     .description-text h2{
+        font-size: 15px;
         width: 80vw;
+    }
+    .description-img{
+        height: 200px;  
+    }
+    .process-header{
+        font-size: 30px;
     }
 }

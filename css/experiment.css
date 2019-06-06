@@ -339,3 +339,25 @@ body{
   display: inline-block; 
   color: white
 }
+.try_products_images{
+  width: 101%;
+  height: 300px;
+  margin: 1%;
+}
+.try_products_images:hover img{
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#logo{
+  height: 50px;
+  width: 50px;
+  display: inline;
+}
+@media screen and (max-width: 380px){
+  #logo{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+}
