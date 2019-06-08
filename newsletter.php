@@ -28,7 +28,7 @@ while (!flock($handle, LOCK_EX | LOCK_NB, $wouldblock)) {
     }
 }
 if ($got_lock) {
-	$to_write = date("M,d,Y h:i:s A"). "\t" . $user_email;
+	$to_write = date("M,d,Y h:i:s A"). "\t" . $user_email . "\n";
 	fwrite($handle, $to_write);
 	fclose($handle);
 }
