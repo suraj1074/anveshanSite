@@ -1,12 +1,5 @@
-.design-process-section {
-    line-height: 25px;
-    margin-bottom: 12px;
-    padding-top: 10%;
-}
 .design-process-content {
-    /*border: 1px solid #e9e9e9;*/
     position: relative;
-    /*padding: 16px 34% 30px 30px;*/
 }
 
 .design-process-content h3 {
@@ -19,24 +12,16 @@
 .process-model {
     padding: 0;
     position: relative;
-    /*max-width: 600px;*/
-    /*margin: 20px;*/
     border: none;
     z-index: 0;
-    /*background-image: url(../images/our_process_background.png);*/
-    /*background-size: cover;*/
     background-color: #212147;
     list-style-type: none;
 }
 
 .process-model li {
-    /*display: inline-block;*/
     width: 100%;
     text-align: center;
     float: none;
-    /*padding-left: 20px;*/
-    /*margin: 1%;*/
-    /*border-right: 2px solid #8585ab;*/
     border-bottom: 2px solid #8585ab;
 }
 .nav-tabs.process-model > li.active > a, .nav-tabs.process-model > li.active > a:hover, .nav-tabs.process-model > li.active > a:focus, .process-model li a:hover, .process-model li a:focus {
@@ -85,44 +70,9 @@
     border-color: #e5e5e5; 
 }
 
-
-
-@media screen and (max-width: 560px) {
-  .more-icon-preocess.process-model li span {
-        font-size: 23px;
-        height: 50px;
-        line-height: 46px;
-        width: 50px;
-    }
-    .more-icon-preocess.process-model li::after {
-        top: 24px;
-    }
-}
-@media screen and (max-width: 380px) { 
-    .process-model.more-icon-preocess li {
-        width: 100%;
-    }
-    .more-icon-preocess.process-model li span {
-        font-size: 16px;
-        height: 35px;
-        line-height: 32px;
-        width: 35px;
-    }
-    .more-icon-preocess.process-model li p {
-        font-size: 8px;
-    }
-    .more-icon-preocess.process-model li::after {
-        top: 18px;
-    }
-    .process-model.more-icon-preocess {
-        text-align: center;
-    }
-}
-
 .process_box_img{
     width: 100%;
     height: 120px;
-    /*margin: 20px;*/
 }
 
 .sub-section-box{
@@ -164,20 +114,11 @@ table{
     margin-right: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .buy_box{
-    position: relative;
-    margin-left: 10%;
-  }
-}
-
 .product_icon{
-    width: 10%;
-    margin-top: 10%;
-    position: absolute;
     background-color: #141313;
-    left: 0%; 
-    z-index: 200;
+    margin-top: -2em;
+    padding-top: 2em;
+    margin-bottom: -3em;
 }
 
 .product_image{
@@ -205,12 +146,6 @@ table{
     margin: 5px;
 }
 
-@media screen and (max-width: 380px) {
-    .product_icon{
-        width: 20%;
-    }
-}
-
 .sub-heading{
     font-size: 2.5vw;
 }
@@ -222,4 +157,48 @@ table{
 .product-name{
     font-size: 35px;
     padding: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .more-icon-preocess.process-model li span {
+        font-size: 23px;
+        height: 50px;
+        line-height: 46px;
+        width: 50px;
+    }
+    .more-icon-preocess.process-model li::after {
+        top: 24px;
+    }
+}
+@media screen and (max-width: 600px) { 
+    .process-model{
+        display: flex;
+    }
+    .process-model.more-icon-preocess li {
+        float: left;
+    }
+    .more-icon-preocess.process-model li span {
+        font-size: 16px;
+        height: 35px;
+        line-height: 32px;
+        width: 35px;
+    }
+    .more-icon-preocess.process-model li p {
+        font-size: 8px;
+    }
+    .more-icon-preocess.process-model li::after {
+        top: 18px;
+    }
+    .process-model.more-icon-preocess {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+  .buy_box{
+    position: relative;
+    margin-left: 10%;
+  }
+  .product_icon{
+    margin: 5px;
+  }
 }

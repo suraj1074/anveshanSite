@@ -39,6 +39,7 @@
   </head>
   <body>
 
+<section class="ftco-section">
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand navbar-left" href="index.html">
@@ -58,36 +59,36 @@
       </div>
     </div>
   </nav>
-
-<div class="product_icon">
-    <ul class="process-model more-icon-preocess" role="tablist" style="width: 100%;">
-        <li role="presentation" class="active">
-            <a href="#discover" aria-controls="discover" role="tab" data-toggle="tab">
-                <img src="images/products/icons/Coconut_oil.jpg" class="icon_img">
-            </a>
-        </li>
-        <li role="presentation">
-            <a href="#strategy" aria-controls="strategy" role="tab" data-toggle="tab">
-                <img src="images/products/icons/Groundnut_oil.jpg" class="icon_img">
-            </a>
-        </li>
-        <li role="presentation">
-            <a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
-                <img src="images/products/icons/Mustard_oil.jpg" class="icon_img">
-            </a>
-        </li>
-        <li role="presentation">
-            <a href="#content" aria-controls="content" role="tab" data-toggle="tab">
-                <img src="images/products/icons/Sesame_oil.jpg" class="icon_img">
-            </a>
-        </li>
-    </ul>
-  </div>
+</section>
 
 <section class="design-process-section ftco-section" id="process-tab">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12" style="margin-left: 9%;">
+      <div class="product_icon col-sm-2 col-xs-12">
+        <ul class="process-model more-icon-preocess" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#discover" aria-controls="discover" role="tab" data-toggle="tab">
+                    <img src="images/products/icons/Coconut_oil.jpg" class="icon_img">
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#strategy" aria-controls="strategy" role="tab" data-toggle="tab">
+                    <img src="images/products/icons/Groundnut_oil.jpg" class="icon_img">
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
+                    <img src="images/products/icons/Mustard_oil.jpg" class="icon_img">
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#content" aria-controls="content" role="tab" data-toggle="tab">
+                    <img src="images/products/icons/Sesame_oil.jpg" class="icon_img">
+                </a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-sm-10 col-xs-12">
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="discover">
             <div class="product-content">
@@ -583,6 +584,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 </body>
 <script src="js/jquery.min.js"></script>

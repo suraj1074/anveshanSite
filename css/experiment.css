@@ -341,7 +341,7 @@ body{
 }
 .try_products_images{
   width: 101%;
-  height: 300px;
+  height: 400px;
   margin: 1%;
 }
 .try_products_images:hover img{
@@ -354,10 +354,13 @@ body{
   width: 50px;
   display: inline;
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 560px){
   #logo{
     height: 30px;
     width: 30px;
     margin: 5px;
+  }
+  .ftco-section{
+    padding: 5px;
   }
 }
