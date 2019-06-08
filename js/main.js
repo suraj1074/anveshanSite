@@ -19,9 +19,19 @@
 
 	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
+		if($(window).width() < 560){
+			$('.js-fullheight').css('height', $(window).height() * 0.75);
+		}
+		else{
 			$('.js-fullheight').css('height', $(window).height());
+		}
+		$(window).resize(function(){
+			if($(window).width() < 560){
+				$('.js-fullheight').css('height', $(window).height() * 0.75);
+			}
+			else{
+				$('.js-fullheight').css('height', $(window).height());
+			}
 		});
 
 	};

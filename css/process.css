@@ -150,7 +150,7 @@ html,body
         top: 24px;
     }
 }
-@media screen and (max-width: 380px) { 
+@media screen and (max-width: 560px) { 
     .process-model.more-icon-preocess li {
         width: 23%;
         padding: 0;
