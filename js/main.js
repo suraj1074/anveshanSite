@@ -295,7 +295,7 @@
   			alert('not a valid e-mail address');
   		}
   		else{
-  			$.post( "newsletter.php", { subscription-email : user_email })
+  			$.post( "newsletter.php", { "subscription-email" : user_email })
 			  .done(function( data ) {
 			    alert( "You subscribed." );
 			  })

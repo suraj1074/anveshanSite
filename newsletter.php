@@ -37,8 +37,8 @@ function IsNullOrEmptyString($str){
     return (!isset($str) || trim($str) === '');
 }
 function IsValidEmail($email){
-	$regex = /^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix;
-	if (!preg_match($regex, $username))
+	$regex = '/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix';
+	if (!preg_match($regex, $email))
 	{
  		return FALSE;
 	}
