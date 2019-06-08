@@ -11372,6 +11372,18 @@ h5,
 	}
 }
 
+@media (max-width: 560px) {
+	.owl-carousel.home-slider .slider-item .slider-text h1 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 560px) {
+	.owl-carousel.home-slider .slider-item .slider-text p {
+		font-size: 15px;
+	}
+}
+
 .owl-carousel.home-slider .owl-nav {
 	position: absolute;
 	bottom: 60px !important;
