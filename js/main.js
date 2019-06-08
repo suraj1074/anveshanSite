@@ -292,15 +292,19 @@
   		event.preventDefault();
   		var user_email = $("input[name='subscription-email'").val();
   		if(!isValidEmailAddress(user_email)){
-  			alert('not a valid e-mail address');
+  			$("#subscribe-result").css("display", "block");
+			$("#subscribe-result").html("<p>Email address is invalid.</p>");
   		}
   		else{
   			$.post( "newsletter.php", { "subscription-email" : user_email })
 			  .done(function( data ) {
-			    alert( "You subscribed." );
+			    $(".subscribe-form").css("display", "none");
+			    $("#subscribe-result").css("display", "block");
+			    $("#subscribe-result").html("<p>Thanks for subscribing.</p>");
 			  })
 			  .fail(function(msg) {
-    			alert( "Failed to subscribe." );
+			    $("#subscribe-result").css("display", "block");
+			    $("#subscribe-result").html("<p>Error in subscribing.</p>");
   			});
   		}
   });
