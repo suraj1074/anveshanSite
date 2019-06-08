@@ -334,7 +334,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
-<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
@@ -343,7 +343,7 @@
 <script src="js/aos.js"></script>
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 <script src="js/jquery.timepicker.min.js"></script>
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
@@ -354,17 +354,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript">
     $(document).ready(function() {
     // script for tab steps
-        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('a[data-toggle="tab"]').click(function (e) {
 
-            var href = $(e.target).attr('href');
-            var $curr = $(".process-model  a[href='" + href + "']").parent();
+            var href = $(this).attr('href');
+            var $curr = $(this).parent();
 
             $('.process-model li').removeClass();
+            $('.process-model li a').removeClass();
 
             $curr.addClass("active");
-        });
-        $('.carousel').carousel({
-          interval: 2000
+            $(this).addClass("active");
+
+            $(".tab-pane").removeClass('active');
+            $(".tab-pane").removeClass('show');
+
+            $(href).addClass('active');
+            $(href).addClass('show');
         });
     });
 // end  script for tab steps
