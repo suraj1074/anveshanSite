@@ -71,25 +71,25 @@
           <h2 class="process-header">Anveshan Process</h2>
           <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist" style="width: 100%;">
               <li role="presentation" class="active">
-                  <a href="#discover" aria-controls="discover" role="tab" data-toggle="tab">
+                  <a href="#cropselector" aria-controls="cropselector" role="tab" data-toggle="tab">
                       <img src="images/our_process/green_1.svg" data="1" class="process_box_img">
                       <h2>Crop Selector</h2>
                   </a>
               </li>
               <li role="presentation">
-                  <a href="#strategy" aria-controls="strategy" role="tab" data-toggle="tab">
+                  <a href="#cropmonitoring" aria-controls="cropmonitoring" role="tab" data-toggle="tab">
                       <img src="images/our_process/green_2.svg" data="2" class="process_box_img">
                       <h2>Crop Monitoring</h2>
                   </a>
               </li>
               <li role="presentation">
-                  <a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
+                  <a href="#traditionalmethods" aria-controls="traditionalmethods" role="tab" data-toggle="tab">
                       <img src="images/our_process/green_4.svg" data="4" class="process_box_img">
                       <h2>Traditional Methods</h2>
                   </a>
               </li>
               <li role="presentation">
-                  <a href="#content" aria-controls="content" role="tab" data-toggle="tab">
+                  <a href="#awareness" aria-controls="awareness" role="tab" data-toggle="tab">
                       <img src="images/our_process/green_3.svg" data="3" class="process_box_img">
                       <h2>Building Awareness</h2>
                   </a>
@@ -99,7 +99,7 @@
         <!-- end design process steps--> 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="discover">
+          <div role="tabpanel" class="tab-pane active" id="cropselector">
             <div class="design-process-content">
               <div class="container">
                 <div class="row">
@@ -138,7 +138,7 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="strategy">
+          <div role="tabpanel" class="tab-pane" id="cropmonitoring">
             <div class="design-process-content">
               <div class="container">
                 <div class="row">
@@ -177,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="optimization">
+          <div role="tabpanel" class="tab-pane" id="traditionalmethods">
             <div class="design-process-content">
               <div class="container">
                 <div class="row">
@@ -215,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="content">
+          <div role="tabpanel" class="tab-pane" id="awareness">
             <div class="design-process-content">
               <div class="container">
                 <div class="row">
@@ -327,6 +327,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script type="text/javascript">
     $(document).ready(function() {
+        var current = location.href.split("#");
+        if(current.length == 2){
+            current = "#" + current[1];
+            $('a[data-toggle="tab"]').each(function(){
+                var $this = $(this);
+                if($this.attr('href').indexOf(current) !== -1){
+                    $this.click();
+                }
+            })
+        }
+
     // script for tab steps
         $('a[data-toggle="tab"]').click(function (e) {
 
