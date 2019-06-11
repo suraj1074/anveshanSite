@@ -67,22 +67,22 @@
       <div class="product_icon col-sm-2 col-xs-12">
         <ul class="process-model more-icon-preocess" role="tablist">
             <li role="presentation" class="active">
-                <a href="#discover" aria-controls="discover" role="tab" data-toggle="tab">
+                <a href="#coconutoil" aria-controls="coconutoil" role="tab" data-toggle="tab">
                     <img src="images/products/icons/Coconut_oil.jpg" class="icon_img">
                 </a>
             </li>
             <li role="presentation">
-                <a href="#strategy" aria-controls="strategy" role="tab" data-toggle="tab">
+                <a href="#groundnutoil" aria-controls="groundnutoil" role="tab" data-toggle="tab">
                     <img src="images/products/icons/Groundnut_oil.jpg" class="icon_img">
                 </a>
             </li>
             <li role="presentation">
-                <a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
+                <a href="#mustardoil" aria-controls="mustardoil" role="tab" data-toggle="tab">
                     <img src="images/products/icons/Mustard_oil.jpg" class="icon_img">
                 </a>
             </li>
             <li role="presentation">
-                <a href="#content" aria-controls="content" role="tab" data-toggle="tab">
+                <a href="#sesameoil" aria-controls="sesameoil" role="tab" data-toggle="tab">
                     <img src="images/products/icons/Sesame_oil.jpg" class="icon_img">
                 </a>
             </li>
@@ -90,7 +90,7 @@
       </div>
       <div class="col-sm-10 col-xs-12">
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="discover">
+          <div role="tabpanel" class="tab-pane active" id="coconutoil">
             <div class="product-content">
               <div class="container" style="width: inherit;">
                 <div class="col-md-2"></div>
@@ -183,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="strategy">
+          <div role="tabpanel" class="tab-pane" id="groundnutoil">
             <div class="product-content">
               <div class="container" style="width: inherit;">
                   <div class="col-md-2"></div>
@@ -274,7 +274,7 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="optimization">
+          <div role="tabpanel" class="tab-pane" id="mustardoil">
             <div class="product-content">
               <div class="container" style="width: inherit;">
                 <div class="col-md-2"></div>
@@ -364,7 +364,7 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="content">
+          <div role="tabpanel" class="tab-pane" id="sesameoil">
             <div class="product-content">
               <div class="container" style="width: inherit;">
                 <div class="col-md-2"></div>
@@ -530,6 +530,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script type="text/javascript">
     $(document).ready(function() {
+        var current = location.href.split("#");
+        console.log(location.href);
+        console.log(current);
+        if(current.length == 2){
+            current = "#" + current[1];
+            $('a[data-toggle="tab"]').each(function(){
+                var $this = $(this);
+                if($this.attr('href').indexOf(current) !== -1){
+                    $this.click();
+                }
+            })
+        }
     // script for tab steps
         $('a[data-toggle="tab"]').click(function (e) {
 
