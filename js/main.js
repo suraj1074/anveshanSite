@@ -307,5 +307,13 @@
     return pattern.test(emailAddress);
   }
 
+  function products_resize(){
+  	if($(window).width() < 560){
+		$('.try_products_images').css('height', $(window).height() * 2);
+	}
+  }
+
+  products_resize();
+
 })(jQuery);
 
