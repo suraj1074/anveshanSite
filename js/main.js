@@ -281,13 +281,6 @@
     fixedContentPos: false
   });
 
-
-  $('#book_date').datepicker({
-	  'format': 'm/d/yyyy',
-	  'autoclose': true
-	});
-	$('#book_time').timepicker();
-
   $( ".subscribe-form" ).submit(function( event ) {
   		event.preventDefault();
   		var user_email = $("input[name='subscription-email'").val();
