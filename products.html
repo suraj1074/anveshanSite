@@ -576,6 +576,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
 
         $(".carousel-control").click(function(e){
+          stopCarouselAutomatic();
           var href = $(this).attr('href');
           var data_slide = $(this).attr('data-slide');
 
@@ -597,12 +598,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           }
           $(href + " .carousel-inner .item").removeClass('active');
           $( href + " .carousel-inner .item:nth-child(" + (active_image + 1) + ")" ).addClass('active');
+          startCarouselAutomatic();
         });
         
         function slideCarouselAutomatic(){
           $(".right").click();
         }
-        var interval = self.setInterval(function(){slideCarouselAutomatic()},2000);
+        var interval;
+        function stopCarouselAutomatic(){
+          self.clearInterval(interval);
+        }
+        function startCarouselAutomatic(){
+          interval = self.setInterval(function(){slideCarouselAutomatic()},2000);
+        }
+        startCarouselAutomatic();
     });
 // end  script for tab steps
 </script>
