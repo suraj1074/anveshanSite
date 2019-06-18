@@ -368,3 +368,119 @@ body{
     height: 600px;
   }
 }
+
+.front-page-carousel::after{
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  height: 75%;
+  content: "";
+  background-size: 100% 100%;
+  right: 1%;
+}
+
+#first_carousel::after{
+  background-image: url(../images/carousel/nandhu-farmer.jpg);
+}
+
+#second_carousel::after{
+  background-image: url(../images/carousel/oil_carousel.png);
+}
+#third_carousel::after{
+  background-image: url(../images/carousel/ghee-carousel.jpg);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 129, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_banner.scss */
+  .front-page-carousel:after {
+    width: 41%;
+    height: 69%;
+  }
+  #first_carousel::after{
+    background-image: url(../images/carousel/nandhu-farmer.jpg);
+  }
+  #second_carousel::after{
+    background-image: url(../images/carousel/oil_carousel.png);
+  }
+  #third_carousel::after{
+    background-image:  url(../images/carousel/ghee-carousel.jpg);
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 129, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_banner.scss */
+  .front-page-carousel:after {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    content: "";
+    background-size: 100% 340px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  #first_carousel::after{
+    background-image: url(../images/carousel/nandhu-farmer.jpg);
+  }
+  #second_carousel::after{
+    background-image: url(../images/carousel/oil_carousel.png);
+  }
+  #third_carousel::after{
+    background-image:  url(../images/carousel/ghee-carousel.jpg);
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 129, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_banner.scss */
+  .front-page-carousel:after {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background-size: contain;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 129, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_banner.scss */
+  .front-page-carousel:after {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+    content: "";
+    background-size: contain;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 129, ../../01 cl html template/New folder/May 2019/179 Medisen Medical/179 Medisen Medical -Template/sass/_banner.scss */
+  .front-page-carousel:after {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    content: "";
+    background-size: contain;
+    right: 5%;
+    bottom: 0;
+    top: auto;
+    background-repeat: no-repeat;
+  }
+}

@@ -11256,7 +11256,7 @@ h5,
 	.owl-carousel.home-slider .slider-item .slider-text .one-forth {
 		width: 100%;
 		position: absolute;
-		top: 0;
+		top: 350px;
 		left: 0;
 		right: 0;
 		bottom: 0;
@@ -11315,7 +11315,7 @@ h5,
 
 @media (max-width: 991.98px) {
 	.owl-carousel.home-slider .slider-item .slider-text .thumb a.thumb-menu h4 {
-		color: rgba(255, 255, 255, 0.8);
+		color: black;
 	}
 }
 
@@ -11354,7 +11354,7 @@ h5,
 
 @media (max-width: 991.98px) {
 	.owl-carousel.home-slider .slider-item .slider-text h1 {
-		color: #fff;
+		color: black;
 		font-size: 50px;
 	}
 }
@@ -11367,7 +11367,7 @@ h5,
 
 @media (max-width: 991.98px) {
 	.owl-carousel.home-slider .slider-item .slider-text p {
-		color: rgba(255, 255, 255, 0.8);
+		color: black;
 		font-size: 23px;
 	}
 }
