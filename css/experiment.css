@@ -371,9 +371,9 @@ body{
 
 .front-page-carousel::after{
   position: absolute;
-  top: 100px;
+  top: 0px;
   width: 50%;
-  height: 75%;
+  height: 100%;
   content: "";
   background-size: 100% 100%;
   right: 1%;
