@@ -11161,6 +11161,9 @@ h5,
 }
 
 @media (max-width: 1199.98px) {
+	.owl-carousel.home-slider {
+		height: 820px;
+	}
 	.owl-carousel.home-slider .slider-item {
 		background-position: center center !important;
 	}
@@ -11174,6 +11177,10 @@ h5,
 	right: 0;
 	background: #000000;
 	opacity: 0;
+}
+
+.owl-carousel .owl-stage-outer{
+	height: 100%;
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
@@ -11256,7 +11263,7 @@ h5,
 	.owl-carousel.home-slider .slider-item .slider-text .one-forth {
 		width: 100%;
 		position: absolute;
-		top: 350px;
+		top: 530px;
 		left: 0;
 		right: 0;
 		bottom: 0;
