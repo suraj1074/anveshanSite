@@ -28,7 +28,7 @@ html,body
     margin: 20px;
     border: none;
     z-index: 0;
-    background-color: black;
+    background-image: url('../images/our_process/process_background.jpg'); background-size: 100% 100%;
 }
 .process-model li {
     display: inline-block;

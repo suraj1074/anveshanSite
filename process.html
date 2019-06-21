@@ -67,30 +67,34 @@
       <div class="col-xs-12" style="padding: 0px;"> 
         <!-- design process steps--> 
         <!-- Nav tabs -->
-        <div class="row" style="background-image: url('images/test.png'); background-repeat: repeat-x;">
+        <div class="row">
           <h2 class="process-header">Anveshan Process</h2>
           <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist" style="width: 100%;">
               <li role="presentation" class="active">
                   <a href="#cropselector" aria-controls="cropselector" role="tab" data-toggle="tab">
-                      <img src="images/our_process/green_1.svg" data="1" class="process_box_img">
+                      <img src="images/our_process/green_1.svg" data="1" class="process_box_img green_img">
+                      <img src="images/our_process/white_1.png" data="1" class="process_box_img white_img">
                       <h2>Crop Selector</h2>
                   </a>
               </li>
               <li role="presentation">
                   <a href="#cropmonitoring" aria-controls="cropmonitoring" role="tab" data-toggle="tab">
-                      <img src="images/our_process/green_2.svg" data="2" class="process_box_img">
+                      <img src="images/our_process/green_2.svg" data="2" class="process_box_img green_img">
+                      <img src="images/our_process/white_2.png" data="2" class="process_box_img white_img">
                       <h2>Crop Monitoring</h2>
                   </a>
               </li>
               <li role="presentation">
                   <a href="#traditionalmethods" aria-controls="traditionalmethods" role="tab" data-toggle="tab">
-                      <img src="images/our_process/green_4.svg" data="4" class="process_box_img">
+                      <img src="images/our_process/green_4.svg" data="4" class="process_box_img green_img">
+                      <img src="images/our_process/white_4.png" data="4" class="process_box_img white_img">
                       <h2>Traditional Methods</h2>
                   </a>
               </li>
               <li role="presentation">
                   <a href="#awareness" aria-controls="awareness" role="tab" data-toggle="tab">
-                      <img src="images/our_process/green_3.svg" data="3" class="process_box_img">
+                      <img src="images/our_process/green_3.svg" data="3" class="process_box_img green_img">
+                      <img src="images/our_process/white_3.png" data="3" class="process_box_img white_img">
                       <h2>Building Awareness</h2>
                   </a>
               </li>
@@ -338,6 +342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             })
         }
 
+        hideAndShowImages();
     // script for tab steps
         $('a[data-toggle="tab"]').click(function (e) {
 
@@ -355,7 +360,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             $(href).addClass('active');
             $(href).addClass('show');
+
+            hideAndShowImages();
         });
+
+        function hideAndShowImages(){
+            $(".green_img").hide();
+            $(".white_img").show();
+
+            $('ul.process-model').find('li.active').find("img.green_img").show();
+            $('ul.process-model').find('li.active').find("img.white_img").hide();
+        }
     });
 // end  script for tab steps
 </script>
