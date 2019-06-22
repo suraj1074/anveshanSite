@@ -119,6 +119,13 @@
   background-size: 100% 100%;
 }
 
+@media (min-width:360px) and (max-width:600px){
+  .twist_box_1{
+    background-image:url(../images/ML_module_small.jpg); 
+    background-size: 100% 100%;
+  }
+}
+
 .twist_box_2{
   background-image:url(../images/image_processing.jpg); 
   background-size: 99.2% 100%;
