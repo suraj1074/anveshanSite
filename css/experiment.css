@@ -528,6 +528,8 @@ body{
 .try_products_images_div{
   padding-left: 0px; 
   padding-right: 0px;
+  border: 5px solid #b38f00;
+  margin-bottom: 10px;
 }
 /*@media only screen and (min-width: 300px) and (max-width: 600px) {
   .try_products_images_div{
@@ -602,5 +604,14 @@ body{
   }
   #try_products_header{
     font-size: 25px;
+  }
+  .try_products_images{
+    width: 80%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ghee_div{
+    display: none;
   }
 }
