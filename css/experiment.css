@@ -385,7 +385,7 @@ body{
 }
 
 #second_carousel::after{
-  background-image: url(../images/carousel/oil_carousel.png);
+  background-image: url(../images/carousel/oil_carousel.jpg);
 }
 #third_carousel::after{
   background-image: url(../images/carousel/ghee-carousel.jpg);
