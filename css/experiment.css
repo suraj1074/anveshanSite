@@ -496,6 +496,7 @@ body{
   width: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
+  height: 500px;
 }
 
 /*.middle {
@@ -543,3 +544,59 @@ body{
   height: 100px;
 }
 */
+
+#tell_you_a_story{
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 50px;
+}
+#scientific_farming{
+  font-weight: bold; 
+  font-size: 40px;
+}
+#process_header{
+  padding-top: 1%;
+  color: whitesmoke; 
+  text-align: center;
+  font-size: 40px; 
+  display: block; 
+  font-weight: bold;
+}
+#try_products_header{
+  font-size: 40px; 
+  font-weight: bold;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  #tell_you_a_story{
+    font-size: 25px;
+  }
+  #scientific_farming{
+    font-size: 25px;
+  }
+  .features-title{
+    font-size: 20px;
+  }
+  .features-text p{
+    font-size: 12px;
+  }
+  .linked-list__pic{
+    height: 250px;
+  }
+  .text_box{
+    padding-top: 10px;
+  }
+  .text_box .heading{
+    font-size: 20px;
+    width: 2rem;
+  }
+  .text_box .sub-text{
+    font-size: 12px;
+    width: 10rem;
+  }
+  #process_header{
+    font-size: 25px;
+  }
+  #try_products_header{
+    font-size: 25px;
+  }
+}
