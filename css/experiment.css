@@ -566,6 +566,10 @@ body{
   font-size: 40px; 
   font-weight: bold;
 }
+.nutrient_box{
+  margin-right: auto;
+  margin-left: auto;
+}
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   #tell_you_a_story{
     font-size: 25px;

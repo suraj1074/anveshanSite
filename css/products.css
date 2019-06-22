@@ -115,7 +115,7 @@ table{
 }
 
 .product_icon{
-    background-color: #141313;
+    /*background-color: #141313;*/
     margin-top: -2em;
     padding-top: 2em;
     margin-bottom: -3em;
@@ -147,7 +147,7 @@ table{
 }
 
 .sub-heading{
-    font-size: 2.5vw;
+    font-size: 25px;
 }
 
 .product-description{
@@ -199,6 +199,6 @@ table{
     margin-left: 10%;
   }
   .product_icon{
-    margin: 5px;
+    margin-bottom: 5px;
   }
 }
