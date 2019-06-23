@@ -358,11 +358,12 @@ body{
   }
   .ftco-section{
     padding: 5px;
+    padding-top: 20px;
   }
   #logo{
     width: 50px;
     height: 38px;
-    margin-right: 10px;
+    margin-right: -5px;
   }
   .try_products_images{
     width: 100%;
@@ -396,15 +397,6 @@ body{
   .front-page-carousel:after {
     width: 41%;
     height: 69%;
-  }
-  #first_carousel::after{
-    background-image: url(../images/carousel/nandhu-farmer.jpg);
-  }
-  #second_carousel::after{
-    background-image: url(../images/carousel/oil_carousel.png);
-  }
-  #third_carousel::after{
-    background-image:  url(../images/carousel/ghee-carousel.jpg);
   }
 }
 
@@ -615,5 +607,11 @@ body{
   .try_products_images_div{
     border: 5px solid #b38f00;
     margin-bottom: 10px;
+  }
+  .navbar.container{
+    /*position: absolute;*/
+  }
+  .ftco-navbar-light .navbar-brand{
+    /*margin-left: -20%;*/
   }
 }

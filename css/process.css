@@ -124,8 +124,8 @@ html,body
 .header_text{
     margin-left: 5%; 
     margin-right: 5%; 
-    border-top: 2px solid blue; 
-    border-bottom: 2px solid blue; 
+    border-top: 2px solid #b38f00; 
+    border-bottom: 2px solid #b38f00; 
     margin-bottom: 40px; 
     margin-top: 20px; 
 }
@@ -152,8 +152,9 @@ html,body
 }
 @media screen and (max-width: 560px) { 
     .process-model.more-icon-preocess li {
-        width: 23%;
+        width: 20%;
         padding: 0;
+        margin-right: 3%;
     }
     h2, .h2{
         font-size: 1rem;
