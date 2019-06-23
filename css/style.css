@@ -11147,7 +11147,7 @@ h5,
 
 .owl-carousel.home-slider {
 	position: relative;
-	height: 650px;
+	height: 700px;
 	z-index: 0;
 }
 
@@ -12066,6 +12066,7 @@ textarea.form-control {
 	margin-bottom: 40px;
 	font-size: 18px;
 	font-weight: 700;
+	height: 0px;
 }
 
 .ftco-footer .ftco-footer-widget ul li a span {
@@ -12105,6 +12106,7 @@ textarea.form-control {
 }
 
 .ftco-footer .ftco-heading-2 {
+	margin-top: 20px;
 	font-size: 17px;
 	font-weight: 700;
 	color: #000000;

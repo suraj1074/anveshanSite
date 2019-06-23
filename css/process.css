@@ -95,10 +95,14 @@ html,body
 }
 
 .sub-section-box{
-    height: 300px;
+    /*height: 300px;*/
     padding-top: 30px;
 }
-
+.sub-section-box p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
 .process_icon_img{
     width: 100px;
     height: 100px;
@@ -115,6 +119,7 @@ html,body
     margin: 20px; 
     text-align: center;
     background-color: white;
+    opacity: 0.8;
 }
 .description-text h2{
     font-size: 2vw; 
@@ -124,17 +129,18 @@ html,body
 .header_text{
     margin-left: 5%; 
     margin-right: 5%; 
-    border-top: 2px solid blue; 
-    border-bottom: 2px solid blue; 
+    border-top: 2px solid #b38f00; 
+    border-bottom: 2px solid #b38f00; 
     margin-bottom: 40px; 
     margin-top: 20px; 
 }
 .process-header{
+    margin-top: 20px;
     margin-left: auto; 
     margin-right: auto; 
     font-size: 40px; 
     font-weight: bold; 
-    color: white;
+    color: black;
 }
 #process-tab{
     padding: 0px;
@@ -152,8 +158,9 @@ html,body
 }
 @media screen and (max-width: 560px) { 
     .process-model.more-icon-preocess li {
-        width: 23%;
+        width: 20%;
         padding: 0;
+        margin-right: 3%;
     }
     h2, .h2{
         font-size: 1rem;
@@ -185,5 +192,6 @@ html,body
     }
     .process-header{
         font-size: 30px;
+        color: black;
     }
 }

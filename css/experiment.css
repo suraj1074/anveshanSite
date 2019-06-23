@@ -31,7 +31,10 @@
  width: 500px;
  height: 300px;
 }
-
+.linked-list-info{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 @media (min-width:768px) {
  .linked-list__item {
   -webkit-box-align:center;
@@ -117,6 +120,13 @@
 .twist_box_1{
   background-image:url(../images/ML_module.jpg); 
   background-size: 100% 100%;
+}
+
+@media (min-width:360px) and (max-width:600px){
+  .twist_box_1{
+    background-image:url(../images/ML_module_small.jpg); 
+    background-size: 100% 100%;
+  }
 }
 
 .twist_box_2{
@@ -350,12 +360,14 @@ body{
     margin: 5px;
   }
   .ftco-section{
-    padding: 5px;
+    /*padding: 5px;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   #logo{
     width: 50px;
     height: 38px;
-    margin-right: 10px;
+    margin-right: -5px;
   }
   .try_products_images{
     width: 100%;
@@ -378,7 +390,7 @@ body{
 }
 
 #second_carousel::after{
-  background-image: url(../images/carousel/oil_carousel.png);
+  background-image: url(../images/carousel/oil_carousel.jpg);
 }
 #third_carousel::after{
   background-image: url(../images/carousel/ghee-carousel.jpg);
@@ -389,15 +401,6 @@ body{
   .front-page-carousel:after {
     width: 41%;
     height: 69%;
-  }
-  #first_carousel::after{
-    background-image: url(../images/carousel/nandhu-farmer.jpg);
-  }
-  #second_carousel::after{
-    background-image: url(../images/carousel/oil_carousel.png);
-  }
-  #third_carousel::after{
-    background-image:  url(../images/carousel/ghee-carousel.jpg);
   }
 }
 
@@ -489,6 +492,7 @@ body{
   width: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
+  height: 500px;
 }
 
 /*.middle {
@@ -536,3 +540,83 @@ body{
   height: 100px;
 }
 */
+
+#tell_you_a_story{
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 50px;
+}
+#scientific_farming{
+  font-weight: bold; 
+  font-size: 40px;
+}
+#process_header{
+  padding-top: 1%;
+  color: whitesmoke; 
+  text-align: center;
+  font-size: 40px; 
+  display: block; 
+  font-weight: bold;
+}
+#try_products_header{
+  font-size: 40px; 
+  font-weight: bold;
+}
+/*.nutrient_box{
+  margin-right: auto;
+  margin-left: auto;
+}*/
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  #tell_you_a_story{
+    font-size: 25px;
+  }
+  #scientific_farming{
+    font-size: 25px;
+  }
+  .features-title{
+    font-size: 20px;
+  }
+  .features-text p{
+    font-size: 12px;
+  }
+  .linked-list__pic{
+    height: 250px;
+  }
+  .text_box{
+    padding-top: 10px;
+  }
+  .text_box .heading{
+    font-size: 20px;
+    width: 2rem;
+  }
+  .text_box .sub-text{
+    font-size: 12px;
+    width: 10rem;
+  }
+  #process_header{
+    font-size: 25px;
+  }
+  #try_products_header{
+    font-size: 25px;
+  }
+  .try_products_images{
+    width: 80%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ghee_div{
+    display: none;
+  }
+  .try_products_images_div{
+    border: 5px solid #b38f00;
+    margin-bottom: 10px;
+  }
+  .navbar.container{
+    /*position: absolute;*/
+  }
+  .ftco-navbar-light .navbar-brand{
+    /*margin-left: -20%;*/
+  }
+}

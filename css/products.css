@@ -14,7 +14,7 @@
     position: relative;
     border: none;
     z-index: 0;
-    background-color: #212147;
+    /*background-color: #212147;*/
     list-style-type: none;
 }
 
@@ -22,7 +22,8 @@
     width: 100%;
     text-align: center;
     float: none;
-    border-bottom: 2px solid #8585ab;
+    border: 2px solid #8585ab;
+    margin-bottom: 5px;
 }
 .nav-tabs.process-model > li.active > a, .nav-tabs.process-model > li.active > a:hover, .nav-tabs.process-model > li.active > a:focus, .process-model li a:hover, .process-model li a:focus {
     border: none;
@@ -91,7 +92,7 @@ table tr:nth-child(odd){
     background: #f0f0f0;
 }
 table{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -115,10 +116,12 @@ table{
 }
 
 .product_icon{
-    background-color: #141313;
+    background-color: #f2f2f2;
     margin-top: -2em;
     padding-top: 2em;
     margin-bottom: -3em;
+    /*margin-left: 40px;*/
+
 }
 
 .product_image{
@@ -128,10 +131,11 @@ table{
 
 .icon_img{
     width: 100%;
-    height: 100%;
+    height: 120px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*transform: scale(0.5);*/
 }
 
 .round_box{
@@ -147,7 +151,7 @@ table{
 }
 
 .sub-heading{
-    font-size: 2.5vw;
+    font-size: 25px;
 }
 
 .product-description{
@@ -157,6 +161,27 @@ table{
 .product-name{
     font-size: 35px;
     padding: 10px;
+}
+
+.product_descrption_text{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.product_descrption_header h2{
+    float: left;
+}
+
+.product_descrption_header a{
+    float: right;
+}
+
+.product_descrption_features {
+    margin-bottom: 20px;
+}
+
+.product_descrption_features .sub-heading{
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 560px) {
@@ -192,6 +217,13 @@ table{
     .process-model.more-icon-preocess {
         text-align: center;
     }
+    .product_descrption_header a{
+        float: left;
+    }
+    .product_descrption_header{
+        margin-bottom: 20px;
+    }
+
 }
 @media screen and (max-width: 600px) {
   .buy_box{
@@ -199,6 +231,6 @@ table{
     margin-left: 10%;
   }
   .product_icon{
-    margin: 5px;
+    margin-bottom: 5px;
   }
 }

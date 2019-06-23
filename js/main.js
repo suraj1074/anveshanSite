@@ -313,7 +313,17 @@
 	}
   }
 
-  products_resize();
+  // products_resize();
+  function try_out_our_products_fit(){
+	  if($(window).width() < 600){
+		$('.for_desktop').css('display', 'none');
+		$('.for_mobile').css('display', 'block');
+	  }else{
+	  	$('.for_desktop').css('display', 'block');
+		$('.for_mobile').css('display', 'none');
+	  }
+	}
+	try_out_our_products_fit();
 
 })(jQuery);
 
