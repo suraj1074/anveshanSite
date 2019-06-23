@@ -92,7 +92,7 @@ table tr:nth-child(odd){
     background: #f0f0f0;
 }
 table{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -120,7 +120,7 @@ table{
     margin-top: -2em;
     padding-top: 2em;
     margin-bottom: -3em;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 
 }
 
@@ -163,6 +163,27 @@ table{
     padding: 10px;
 }
 
+.product_descrption_text{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.product_descrption_header h2{
+    float: left;
+}
+
+.product_descrption_header a{
+    float: right;
+}
+
+.product_descrption_features {
+    margin-bottom: 20px;
+}
+
+.product_descrption_features .sub-heading{
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 560px) {
   .more-icon-preocess.process-model li span {
         font-size: 23px;
@@ -196,6 +217,13 @@ table{
     .process-model.more-icon-preocess {
         text-align: center;
     }
+    .product_descrption_header a{
+        float: left;
+    }
+    .product_descrption_header{
+        margin-bottom: 20px;
+    }
+
 }
 @media screen and (max-width: 600px) {
   .buy_box{

@@ -31,7 +31,10 @@
  width: 500px;
  height: 300px;
 }
-
+.linked-list-info{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 @media (min-width:768px) {
  .linked-list__item {
   -webkit-box-align:center;
@@ -357,8 +360,9 @@ body{
     margin: 5px;
   }
   .ftco-section{
-    padding: 5px;
-    padding-top: 20px;
+    /*padding: 5px;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   #logo{
     width: 50px;
@@ -558,10 +562,11 @@ body{
   font-size: 40px; 
   font-weight: bold;
 }
-.nutrient_box{
+/*.nutrient_box{
   margin-right: auto;
   margin-left: auto;
-}
+}*/
+
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   #tell_you_a_story{
     font-size: 25px;
