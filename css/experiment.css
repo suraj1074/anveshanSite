@@ -420,15 +420,6 @@ body{
     margin: 0 auto;
     background-repeat: no-repeat;
   }
-  #first_carousel::after{
-    background-image: url(../images/carousel/nandhu-farmer.jpg);
-  }
-  #second_carousel::after{
-    background-image: url(../images/carousel/oil_carousel.png);
-  }
-  #third_carousel::after{
-    background-image:  url(../images/carousel/ghee-carousel.jpg);
-  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
